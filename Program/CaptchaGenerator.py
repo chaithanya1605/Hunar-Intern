@@ -21,12 +21,10 @@ def generateCaptcha(n):
     return captcha
  
 # Driver code
- 
-# Generate a random CAPTCHAfor i in range(0,6):
-
-for i in range(0,6):
-    
+n = 5 
+while (n):
     captcha = generateCaptcha(5)
-    print(i,captcha)
- 
-# Ask user to enter a CAPTCHA
+    print(captcha)
+    if n == -1:
+        break;
+    n-=1
